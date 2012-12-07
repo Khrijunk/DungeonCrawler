@@ -3991,7 +3991,9 @@ namespace DungeonCrawler.Systems
                 #region Vermis
 
                 case Aggregate.ZombiePlayer:
-
+                    CoolDown coolDown;
+                    TimedEffect timeEffect;
+                    Buff buff;
                     #region Race Variables
 
                     #endregion
@@ -4011,60 +4013,150 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                         _game.PositionComponent[userID], 1, 300, userID);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 2, 300, userID);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 3, 300, userID);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 4, 300, userID);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 5, 300, userID);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 6, 300, userID);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 7, 300, userID);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 8, 300, userID);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 9, 300, userID);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.ThrownBlades,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.ThrownBlades, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 10, 300, userID);
                                     break;
@@ -4086,42 +4178,538 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID =eid,
+                                        TimeLeft = 10,
+                                         TotalDuration=10,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 100,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 10,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 10,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID =eid,
+                                        TimeLeft = 10,
+                                         TotalDuration=10,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 120,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 15,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 15,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 12,
+                                        TimeLeft = 12,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 12,
+                                        TotalDuration = 12,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 120,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 15,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 15,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
-                                    break;
+                                   
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 14,
+                                        TimeLeft = 14,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
 
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 140,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 20,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 20,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
+                                    break;
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 14,
+                                        TimeLeft = 14,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 140,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 20,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 20,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 16,
+                                        TimeLeft = 16,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 140,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 20,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 20,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 16,
+                                        TimeLeft = 16,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 160,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 25,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 25,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 18,
+                                        TimeLeft = 18,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 18,
+                                        TotalDuration = 18,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 160,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 25,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 25,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 18,
+                                        TimeLeft = 18,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 18,
+                                        TotalDuration = 18,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 180,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 30,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 30,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 20,
+                                        TimeLeft = 20,
+                                        Type = SkillType.FrenziedAttack,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 20,
+                                        TotalDuration = 20,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 200,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 0,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 35,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = false,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = true,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = 35,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 default:
@@ -4141,42 +4729,132 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.CausticWeapons,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 default:
@@ -4196,42 +4874,538 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 10,
+                                        TotalDuration = 10,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 1,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -6,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 10,
+                                        TotalDuration = 10,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 1,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -5,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 12,
+                                        TimeLeft = 12,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 12,
+                                        TotalDuration = 12,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 2,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -5,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
-                                    break;
 
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 14,
+                                        TimeLeft = 14,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 2,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -4,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
+                                    break;
                                 case 5:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 14,
+                                        TimeLeft = 14,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 3,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -4,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 16,
+                                        TimeLeft = 16,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 3,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -3,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 16,
+                                        TimeLeft = 16,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 4,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -3,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 18,
+                                        TimeLeft = 18,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 18,
+                                        TotalDuration = 18,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 4,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -2,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 18,
+                                        TimeLeft = 18,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 18,
+                                        TotalDuration = 18,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 5,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = false,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = true,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength = -2,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 20,
+                                        TimeLeft = 20,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+
+                                    timeEffect = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 20,
+                                        TotalDuration = 20,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, timeEffect);
+                                    buff = new Buff()
+                                    {
+                                        EntityID = eid,
+                                        MovementSpeed = 0,
+                                        DefenseMelee = 0,
+                                        DefenseRanged = 7,
+                                        AttackMelee = 0,
+                                        AttackRanged = 0,
+                                        AttackSpeed = 00,
+                                        isPercentAttackMelee = false,
+                                        isPercentAttackRanged = false,
+                                        isPercentAttackSpeed = false,
+                                        isPercentDefenseMelee = false,
+                                        isPercentDefenseRanged = true,
+                                        isPercentFatigue = false,
+                                        isPercentHealth = false,
+                                        isPercentMovementSpeed = true,
+                                        Fatigue = 0,
+                                        Health = 0,
+                                        isPercentPsi = false,
+                                        isPercentResistPoison = false,
+                                        isPercentWeaponAccuracy = false,
+                                        isPercentWeaponSpeed = false,
+                                        isPercentWeaponStrength = false,
+                                        Psi = 0,
+                                        ResistPoison = 0,
+                                        TargetID = userID,
+                                        WeaponAccuracy = 0,
+                                        WeaponSpeed = 0,
+                                        WeaponStrength =- 1,
+                                    };
+                                    _game.BuffComponent.Add(eid, buff);
                                     break;
 
                                 default:
@@ -4251,42 +5425,132 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.MeatShield,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 default:
@@ -4298,7 +5562,8 @@ namespace DungeonCrawler.Systems
                         case SkillType.Regeneration:
 
                             #region Skill Variables
-
+                            HealOverTime HoT;
+                            TimedEffect time;
                             #endregion
 
                             switch (rank)
@@ -4306,42 +5571,304 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 1,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 10,
+                                        TotalDuration = 10,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 1,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 12,
+                                        TotalDuration = 12,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 12,
+                                        TimeLeft = 12,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 12,
+                                        TimeLeft = 12,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 1,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 12,
+                                        TotalDuration = 12,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 2,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 3,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 14,
+                                        TotalDuration = 14,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 3,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 4,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 16,
+                                        TotalDuration = 16,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 4,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 18,
+                                        TotalDuration = 18,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 10,
+                                        TimeLeft = 10,
+                                        Type = SkillType.Regeneration,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    HoT = new HealOverTime()
+                                    {
+                                        AmountPerTick = 5,
+                                        CurrentStack = 1,
+                                        CurrentTime = 0,
+                                        EntityID = eid,
+                                        MaxStack = 1,
+                                        TargetID = userID,
+                                        TickTime = 1,
+                                    };
+                                    _game.HealOverTimeComponent.Add(eid, HoT);
+
+                                    time = new TimedEffect()
+                                    {
+                                        EntityID = eid,
+                                        TimeLeft = 20,
+                                        TotalDuration = 20,
+                                    };
+                                    _game.TimedEffectComponent.Add(eid, time);
                                     break;
 
                                 default:
@@ -4355,65 +5882,156 @@ namespace DungeonCrawler.Systems
                             #region Skill Variables
 
                             #endregion
-
+                            
                             switch (rank)
                             {
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 1, 300, userID);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 2, 300, userID);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 3, 300, userID);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 4, 300, userID);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 5, 300, userID);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 6, 300, userID);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 7, 300, userID);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 8, 300, userID);
                                     break;
 
                                 case 9:
-                                    eid = Entity.NextEntity(); _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
+                                    eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
+                                    _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                         _game.PositionComponent[userID], 9, 300, userID);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.BenignParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.BenignParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 10, 300, userID);
                                     break;
@@ -4435,60 +6053,150 @@ namespace DungeonCrawler.Systems
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 1, 300, userID);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 2, 300, userID);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 3, 300, userID);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 4, 300, userID);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 5, 300, userID);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 6, 300, userID);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 7, 300, userID);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 8, 300, userID);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 9, 300, userID);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MaliciousParasite,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MaliciousParasite, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 10, 300, userID);
                                     break;
@@ -4504,66 +6212,156 @@ namespace DungeonCrawler.Systems
                             #region Skill Variables
 
                             #endregion
-
+                           
                             switch (rank)
                             {
                                 #region Checking Rank
                                 case 1:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 1, 300, userID);
                                     break;
 
                                 case 2:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 2, 300, userID);
                                     break;
 
                                 case 3:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 3, 300, userID);
                                     break;
 
                                 case 4:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 4, 300, userID);
                                     break;
 
                                 case 5:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 5, 300, userID);
                                     break;
 
                                 case 6:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 6, 300, userID);
                                     break;
 
                                 case 7:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 7, 300, userID);
                                     break;
 
                                 case 8:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 8, 300, userID);
                                     break;
 
                                 case 9:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 9, 300, userID);
                                     break;
 
                                 case 10:
                                     eid = Entity.NextEntity();
+                                    coolDown = new CoolDown()
+                                    {
+                                        EntityID = eid,
+                                        MaxTime = 1,
+                                        TimeLeft = 1,
+                                        Type = SkillType.MindlessParasites,
+                                        UserID = userID,
+                                    };
+                                    _game.CoolDownComponent.Add(eid, coolDown);
                                     _game.SkillEntityFactory.CreateSkillProjectile(SkillType.MindlessParasites, (Facing)_game.SpriteAnimationComponent[userID].CurrentAnimationRow,
                                        _game.PositionComponent[userID], 10, 300, userID);
                                     break;
@@ -9794,8 +11592,7 @@ namespace DungeonCrawler.Systems
                         return;
 
                     eid = Entity.NextEntity();
-                    instant = new InstantEffect() { EntityID = eid, isTriggered = true };
-                    _game.InstantEffectComponent.Add(eid, instant);
+                    instantEffect = new InstantEffect() { EntityID = eid, isTriggered = true };
                     DirectDamage damage;
                     switch (rank)
                     {
@@ -9912,6 +11709,8 @@ namespace DungeonCrawler.Systems
                             throw new Exception("Unimplemented Rank");
                     }
                     _game.DirectDamageComponent.Add(eid, damage);
+                    instant = new InstantEffect() { EntityID = eid, isTriggered = false, };
+                    _game.InstantEffectComponent.Add(eid, instant);
                     break;
                 #endregion
 
@@ -10243,7 +12042,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 1,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10268,7 +12067,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 1,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10293,7 +12092,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 2,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10318,7 +12117,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 2,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10342,7 +12141,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 3,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10366,7 +12165,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 3,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10390,7 +12189,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 4,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10414,7 +12213,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 4,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10438,7 +12237,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 5,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
@@ -10462,7 +12261,7 @@ namespace DungeonCrawler.Systems
                             {
                                 AmountPerTick = 7,
                                 CurrentStack = 1,
-                                CurrentTime = 10,
+                                CurrentTime = 0,
                                 EntityID = eid,
                                 MaxStack = 1,
                                 TargetID = target,
