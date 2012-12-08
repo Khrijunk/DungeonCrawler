@@ -141,7 +141,7 @@ namespace DungeonCrawler.Systems
                     //Adding the list of ids in the effect to
                     //the deleted list since the skill was a dud
                     // ~Nick B.
-                    deleteList.AddRange(effect.AffectedIDList);
+                     deleteList.AddRange(effect.AffectedIDList);
                 }
 
                 //Either way we'll need to delete this component
@@ -2868,6 +2868,7 @@ namespace DungeonCrawler.Systems
                                         break;
                                     #endregion
                                 }
+
                                 #region Logic
                                 if (DrainPsiOrFatigue(userID, psiCost))
                                 {
@@ -2955,8 +2956,9 @@ namespace DungeonCrawler.Systems
 
                                     default:
                                         break;
-                                }
+                               
                                     #endregion
+                                }
 
                                     #region logic
                                         
